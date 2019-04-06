@@ -1,3 +1,4 @@
+const fs = require("fs");
 const jsonFile = require("./data.json");
 function consoleLines(){
     return console.log("---------------------");
@@ -23,7 +24,6 @@ function read(nameToRead){
     return jsonFile[nameToRead].value;
 }
 
-const fs = require("fs");
 var person = {
     name: {
         first: "Bob",
